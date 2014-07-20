@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha  --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --reporter spec --check-leaks test/"
+    "test": "mocha  --reporter spec --check-leaks test/"
   },
   "dependencies": {
     "express": "~4.0.0",
