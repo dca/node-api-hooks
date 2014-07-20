@@ -4,8 +4,9 @@ var router = express.Router();
 function hooks(req, res) {
 
 	var message = req.body;
+	var query = req.query;
 
-	console.log('call webhook', message);
+	console.log('call webhook', message, query);
 	console.log('call webhook', Object.keys(message));
 
 	res.json({
