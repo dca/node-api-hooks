@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha  --reporter spec --check-leaks test/"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml"
+
   },
   "dependencies": {
     "express": "~4.0.0",
